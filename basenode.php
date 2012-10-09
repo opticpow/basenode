@@ -16,7 +16,7 @@ date_default_timezone_set('Australia/NSW');
 
 // Setup Serial
 $serial = new phpSerial;
-$serial->deviceSet("/dev/ttyUSB0");
+$serial->deviceSet("/dev/ttyAMA0");
 $serial->confBaudRate(57600);
 $serial->confParity("none");
 $serial->confCharacterLength(8);
