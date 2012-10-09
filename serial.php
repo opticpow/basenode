@@ -8,7 +8,7 @@ function microtime_float()
         return ((float)$usec + (float)$sec);
 }
 
-include "php_serial.class.php";
+include "lib/php_serial.class.php";
 
 date_default_timezone_set('Australia/NSW');
 
