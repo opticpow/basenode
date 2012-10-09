@@ -4,6 +4,8 @@
 
 require("lib/phpMQTT.php");
 
+date_default_timezone_set('Australia/NSW');
+
 $mqtt = new phpMQTT("172.30.30.101", 1883, "HA logger v1");
 
 if(!$mqtt->connect()){
